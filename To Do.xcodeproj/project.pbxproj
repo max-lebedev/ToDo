@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7511D3AB26E777FE00339ACF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D3AA26E777FE00339ACF /* Task.swift */; };
+		7511D3AD26E7780900339ACF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D3AC26E7780900339ACF /* User.swift */; };
 		754F5FD526E62FA9003054FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F5FD426E62FA9003054FD /* AppDelegate.swift */; };
 		754F5FD726E62FA9003054FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F5FD626E62FA9003054FD /* SceneDelegate.swift */; };
 		754F5FD926E62FA9003054FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F5FD826E62FA9003054FD /* LoginViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7511D3AA26E777FE00339ACF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7511D3AC26E7780900339ACF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		754F5FD126E62FA9003054FD /* To Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F5FD426E62FA9003054FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		754F5FD626E62FA9003054FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7511D3AE26E7781800339ACF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7511D3AA26E777FE00339ACF /* Task.swift */,
+				7511D3AC26E7780900339ACF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7511D3AF26E7785900339ACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				754F5FDA26E62FA9003054FD /* Main.storyboard */,
+				754F5FDF26E62FAA003054FD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		754F5FC826E62FA9003054FD = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +86,8 @@
 		754F5FD326E62FA9003054FD /* To Do */ = {
 			isa = PBXGroup;
 			children = (
+				7511D3AE26E7781800339ACF /* Models */,
+				7511D3AF26E7785900339ACF /* View */,
 				754F5FEB26E659C0003054FD /* Controllers */,
 				754F5FEA26E659A1003054FD /* Suport files */,
 			);
@@ -75,9 +99,7 @@
 			children = (
 				754F5FD426E62FA9003054FD /* AppDelegate.swift */,
 				754F5FD626E62FA9003054FD /* SceneDelegate.swift */,
-				754F5FDA26E62FA9003054FD /* Main.storyboard */,
 				754F5FDD26E62FAA003054FD /* Assets.xcassets */,
-				754F5FDF26E62FAA003054FD /* LaunchScreen.storyboard */,
 				754F5FE226E62FAA003054FD /* Info.plist */,
 				756F4D8926E666FC00BE4577 /* GoogleService-Info.plist */,
 			);
@@ -173,6 +195,8 @@
 			files = (
 				754F5FD926E62FA9003054FD /* LoginViewController.swift in Sources */,
 				754F5FE926E65919003054FD /* TasksViewController.swift in Sources */,
+				7511D3AD26E7780900339ACF /* User.swift in Sources */,
+				7511D3AB26E777FE00339ACF /* Task.swift in Sources */,
 				754F5FD526E62FA9003054FD /* AppDelegate.swift in Sources */,
 				754F5FD726E62FA9003054FD /* SceneDelegate.swift in Sources */,
 			);
