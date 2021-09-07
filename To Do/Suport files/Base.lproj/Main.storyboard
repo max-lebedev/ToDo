@@ -71,7 +71,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfk-NY-bPB"/>
-                                                    <segue destination="Psu-2y-9Mn" kind="presentation" identifier="tasksSegue" animates="NO" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="LVO-iG-iNr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ0-RT-ydm">
@@ -119,6 +118,7 @@
                         <outlet property="passwordTextField" destination="Qh4-E7-970" id="lmB-Bg-wA8"/>
                         <outlet property="registerButton" destination="zJ0-RT-ydm" id="dbD-CS-ga8"/>
                         <outlet property="warnLabel" destination="EoT-aM-Qya" id="oEd-W2-cjw"/>
+                        <segue destination="Psu-2y-9Mn" kind="presentation" identifier="tasksSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="K0W-eb-8Ra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -164,6 +164,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="eed-lC-0Tf">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="z7D-Sl-meC">
+                            <connections>
+                                <action selector="signOutTapped:" destination="En3-nK-MXF" id="v1x-xv-adw"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RDJ-sg-UE4">
                             <connections>
                                 <action selector="addTapped:" destination="En3-nK-MXF" id="uut-9e-hPY"/>
